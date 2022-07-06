@@ -1,0 +1,14 @@
+version: "3.2"
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    hostname: rabbitmq1
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - persistence:/var/lib/rabbitmq
+
+volumes:
+  persistence:

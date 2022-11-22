@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  sonic:
+    build: .
+    ports:
+      - "1491:1491"
